@@ -1,4 +1,4 @@
-# Taxi Simulator
+# Traffic Simulator
 
 ## Note
 This assignment called for window resizing to affect the game so the elements rearrange. However, this would change the overall
