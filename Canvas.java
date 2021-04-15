@@ -142,9 +142,6 @@ public class Canvas extends JPanel implements MouseListener, KeyListener {
 
     // passes in "real" mouse value even when the window is resized or scaled
     public void mousePressed (MouseEvent event) {
-        System.out.println(((event.getPoint().x + " " + (map.get_incr_x() * -1)) + " " + map.get_scale()));
-        System.out.println(((event.getPoint().x + (map.get_incr_x() * -1)) + " " + map.get_scale()));
-        System.out.println(((event.getPoint().x + (map.get_incr_x() * -1)) * map.get_scale()));
         model.mouse_loc((int)((event.getPoint().x + (map.get_incr_x() * -1)) / map.get_scale()), (int)((event.getPoint().y + (map.get_incr_y() * -1)) / map.get_scale()));
     }
     //

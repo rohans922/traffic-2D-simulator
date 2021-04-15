@@ -57,19 +57,15 @@ public class Arrows extends JPanel implements MouseListener {
     public void mousePressed (MouseEvent event) {
         // checks if clicks are in rectangles
         if (up.contains(event.getPoint().x, event.getPoint().y)) {
-            System.out.println("UP");
             canvas.pan("up");
         }
         if (down.contains(event.getPoint().x, event.getPoint().y)) {
-            System.out.println("DOWN");
             canvas.pan("down");
         }
         if (left.contains(event.getPoint().x, event.getPoint().y)) {
-            System.out.println("LEFT");
             canvas.pan("left");
         }
         if (right.contains(event.getPoint().x, event.getPoint().y)) {
-            System.out.println("RIGHT");
             canvas.pan("right");
         }
     }

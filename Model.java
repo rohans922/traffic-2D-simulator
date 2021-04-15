@@ -105,7 +105,6 @@ public class Model {
                 vehicles[i] = new Truck(1, rand_dir, -100, -100, i, game, this);
             else
                 vehicles[i] = new Car(rand_speed, rand_dir, -100, -100, i, game, this);
-            System.out.println("Type: " + rand_type + " Direction: " + rand_dir);
         }
         // allows for drawing vehicles at random intervals
         create = rand.nextInt(60) + 0;

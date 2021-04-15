@@ -118,7 +118,6 @@ public abstract class Vehicle extends ImageIcon {
 
     // reads the outline file depending on the vehicle and orientation
     public void read_outline () {
-    System.out.println(direction + type + "outline.png");
         try {
             outline = ImageIO.read(getClass().getResource(direction + type + "outline.png"));
         } catch (IOException e) {
@@ -129,7 +128,6 @@ public abstract class Vehicle extends ImageIcon {
 
     // sets the start position depending on orientation
     public void set_start() {
-        System.out.println("Setting start!");
         rand  = new Random();
         if (direction == 1) {
             int rand_start = rand.nextInt(3) + 0;
@@ -191,7 +189,6 @@ public abstract class Vehicle extends ImageIcon {
     public void randomize_reset() {
         int rand_dir = rand.nextInt(4) + 1;
         int rand_speed = rand.nextInt(4) + 2;
-        System.out.println(rand_dir);
         if (type == "car")
             speed = rand_speed;
         else if (type == "truck")

@@ -66,7 +66,6 @@ public class Car extends Vehicle {
 
     public void randomize() {
         // randomizes properties
-        System.out.println("Randomizing!");
         randomize_colors();
         label.setBounds(-100, -100, 200, 50);
         set_start();
