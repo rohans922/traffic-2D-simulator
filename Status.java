@@ -21,7 +21,7 @@ public class Status extends JPanel {
     // major objects
     private Canvas canvas;
     private Model model;
-    
+
     private JLabel score_label, score_alert, instructions;
     private Toggle more;
     private JScrollPane scroll;
@@ -37,7 +37,7 @@ public class Status extends JPanel {
     public Status (Model model, Canvas canvas) {
         // instruction strings, empty and full
         default_str = "<html><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></html>";
-        instr_str = "<html><div><p><strong>OBJECTIVE:</strong></p></div><div><p>Guide the traffic by clicking cars to avoid crashes. You gain points for every car that passes an intersection.</p><p>&nbsp;</p></div><div><p><strong>CONTROLS:</strong></p></div><div><p><strong>Click</strong> a vehicles to select it and it will stop at the next intersection. Use&nbsp;<strong>shift</strong>&nbsp;while selected to make the vehicles speed up.</p></div><div><p>To restart, hit <strong>enter</strong> or click restart.</p><p>&nbsp;</p><p><strong>WIDGETS:</strong></p><p>The widgets on the right can change the properties of the vehicles and zoom and pan with the arrows and slider. You can also add vehicles and control the game. This display is your status panel which shows your score and which vehicles are in the simulation.</p></div></html>";
+        instr_str = "<html><div><p><strong>OBJECTIVE:</strong></p></div><div><p>Guide the traffic by clicking cars to avoid crashes. You gain points for every car that passes an intersection.</p><p>&nbsp;</p></div><div><p><strong>CONTROLS:</strong></p></div><div><p><strong>Click</strong> a vehicles to select it and it will stop at the next intersection. Use the&nbsp;<strong>space bar</strong>&nbsp;while selected to make the vehicles speed up.</p></div><div><p>To restart, hit <strong>enter</strong> or click restart.</p><p>&nbsp;</p><p><strong>WIDGETS:</strong></p><p>The widgets on the right can change the properties of the vehicles and zoom and pan with the arrows and slider. You can also add vehicles and control the game. This display is your status panel which shows your score and which vehicles are in the simulation.</p></div></html>";
 
         setPreferredSize(new Dimension(200, 600));
 
